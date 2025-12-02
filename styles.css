@@ -1,0 +1,37 @@
+/* Ozadje strani */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+    background-image: url("ozadje.jpg"); /* ime tvoje slike */
+    background-size: cover;     /* raztegne èez celo stran */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* da se ne premika */
+    
+    text-align: center; /* vsa vsebina na sredino */
+    color: white;       /* tekst bel, da se vidi */
+}
+
+/* Glavna vsebina na sredino in bolj pregledna */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.4); /* rahlo èrno ozadje za boljšo berljivost */
+    border-radius: 10px;
+}
+
+/* Naslovi bolj vidni */
+h1, h2, h3 {
+    color: black;
+}
+
+/* Tekst in povezave */
+p, a {
+    color: black;
+}
+a {
+    text-decoration: underline;
+}

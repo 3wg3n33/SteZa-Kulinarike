@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tvoja Spletna Stran — Ime Podjetja</title>
+  <meta name="description" content="Predstavitvena stran — kratka opisna vrstica.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">IME</a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">
+        <span class="sr-only">Odpri meni</span>
+        ?
+      </button>
+      <nav id="mainNav" class="nav" aria-label="Glavna navigacija">
+        <ul>
+          <li><a href="#home">Domov</a></li>
+          <li><a href="#services">Storitve</a></li>
+          <li><a href="#gallery">Galerija</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Dobrodošli pri IME</h1>
+        <p class="lead">Nudimo profesionalne storitve — kratek opis v eni vrstici.</p>
+        <p><a class="btn" href="#contact">Kontaktiraj nas</a></p>
+      </div>
+    </section>
+
+    <section id="services" class="container services">
+      <h2>Naše storitve</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Spletni dizajn</h3>
+          <p>Moderen, odziven dizajn prilagojen vaši blagovni znamki.</p>
+        </article>
+        <article class="card">
+          <h3>Razvoj</h3>
+          <p>Frontend in backend rešitve - optimizirane in varne.</p>
+        </article>
+        <article class="card">
+          <h3>SEO & Podpora</h3>
+          <p>Poveèajte vidnost in poskrbite za stalno rast.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="container gallery">
+      <h2>Galerija</h2>
+      <div class="grid gallery-grid">
+        <div class="img-placeholder">Slika 1</div>
+        <div class="img-placeholder">Slika 2</div>
+        <div class="img-placeholder">Slika 3</div>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Kontakt</h2>
+      <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST" novalidate>
+        <label for="name">Ime</label>
+        <input id="name" name="name" type="text" required minlength="2" />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="message">Sporoèilo</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <div class="form-actions">
+          <!-- Èe ne želiš Formspree, zamenjaj action z: action="mailto:ti@primer.si" method="GET" -->
+          <button type="submit" class="btn">Pošlji</button>
+        </div>
+
+        <p class="form-note">Ali želiš, da prejmeš kopijo na email? Dodaj polje za potrditev.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Ime podjetja — Vse pravice pridržane.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
