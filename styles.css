@@ -4,14 +4,14 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
 
-    background-image: url("slika1.jpg"); /* ime tvoje slike */
-    background-size: cover;     /* raztegne èez celo stran */
+    background-image: url("ozadje.jpg"); /* ime tvoje slike */
+    background-size: cover;     /* raztegne čez celo stran */
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed; /* da se ne premika */
     
     text-align: center; /* vsa vsebina na sredino */
-    color: green;       /* tekst bel, da se vidi */
+    color: white;       /* tekst bel, da se vidi */
 }
 
 /* Glavna vsebina na sredino in bolj pregledna */
@@ -19,18 +19,18 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding: 40px 20px;
-    background: rgba(0, 0, 0, 0.4); /* rahlo èrno ozadje za boljšo berljivost */
+    background: rgba(0, 0, 0, 0.4); /* rahlo črno ozadje za boljšo berljivost */
     border-radius: 10px;
 }
 
 /* Naslovi bolj vidni */
 h1, h2, h3 {
-    color:red;
+    color: blue;
 }
 
 /* Tekst in povezave */
 p, a {
-    color:blue;
+    color: dark blue;
 }
 a {
     text-decoration: underline;
