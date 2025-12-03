@@ -4,8 +4,8 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
 
-    background-image: url("ozadje.jpg"); /* ime tvoje slike */
-    background-size: cover;     /* raztegne Ëez celo stran */
+    background-image: url("slika1.jpg"); /* ime tvoje slike */
+    background-size: cover;     /* raztegne √®ez celo stran */
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed; /* da se ne premika */
@@ -19,7 +19,7 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding: 40px 20px;
-    background: rgba(0, 0, 0, 0.4); /* rahlo Ërno ozadje za boljöo berljivost */
+    background: rgba(0, 0, 0, 0.4); /* rahlo √®rno ozadje za bolj≈°o berljivost */
     border-radius: 10px;
 }
 
@@ -35,3 +35,4 @@ p, a {
 a {
     text-decoration: underline;
 }
+
