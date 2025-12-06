@@ -1,166 +1,36 @@
 <!doctype html>
 <html lang="sl">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-    <title>SteZa kulinarike</title>
-    <meta name="description" content="Predstavitvena stran SteZa kulinarike.">
-
-    <!-- OPEN GRAPH ZA FACEBOOK / INSTAGRAM / MESSENGER -->
-    <meta property="og:title" content="SteZa kulinarike">
-    <meta property="og:description" content="Domača kulinarika, ponudba, galerija in kontakt.">
-    <meta property="og:image" content="https://3wg3n33.github.io/ozadje1.jpg">
-    <meta property="og:url" content="https://SteZa-Kulinarike/">
-    <meta property="og:type" content="website">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SteZa Kulinarike</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="#"></a>
-      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">
-        <span class="sr-only">STE LAČNI</span>
-        ?
-      </button>
-      <nav id="mainNav" class="nav" aria-label="Glavna navigacija">
-        <ul>
-           <li><a href="#home">KDO SMO</a></li>
-          <li><a href="#services">KAJ PONUJAMO</a></li>
-          <li><a href="#gallery">GALERIJA</a></li>
-          <li><a href="#contact">KONTAKT</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="container">
-        <h1>SteZa Kulinarike</h1>
-       
-        <p><a class="btn" href="#gallery">catering za vse priložnost</a></p>
-      </div>
-    </section>
-    
-        <p>  </p>
-        <p class="lead">Smo ekipa polna znanja in izkušen</p>
-        
- <p>Nahajamo se v okolici Novega mesta</p>
+<header>
+<nav>
+  <ul>
+    <li><a href="index.html">DOMOV</a></li>
+    <li><a href="kdo-smo.html">KDO SMO</a></li>
+    <li><a href="kaj-ponujamo.html">KAJ PONUJAMO</a></li>
+    <li><a href="galerija.html">GALERIJA</a></li>
+    <li><a href="kontakt.html">KONTAKT</a></li>
+  </ul>
+</nav>
+</header>
 
- <p>Pridemo vsepovsod</p>
-      
+<section class="container">
+    <h1>SteZa Kulinarike</h1>
+    <p>Smo ekipa polna znanja in izkušen.</p>
+    <p>Nahajamo se v okolici Novega mesta.</p>
+    <p>Pridemo vsepovsod.</p>
+</section>
 
-    <section id="services" class="container services">
-      <h2>KAJ PONUJAMO</h2>
-      <div class="grid">
-        <article class="card">
-          <h3> Priprava hrane in organizacija:</h3>
- <p>-Pikniki</p>
- <p>-Poroke</p>
- <p>-Rojstnodnevne zabave</p>
- <p>-Poslovne pogostitve</p>
-
- <p>Peka pic/Burgerjev,Jedi izpod peke,Mesne rulade</p>
- <p> Sladki kotiček</p>
-            
-        </article>
-        <article class="card">
-          <h3></h3>
-          <p></p>
-        </article>
-        <article class="card">
-          <h3>Pridemo na vašo lokacijo</h3>
-
-          
-<h3>Pridete vi k nam na mirno lokacijo pod Gorjanci</h3>
-          <p></p>
-        </article>
-      </div>
-    </section>
-
-    <section id="gallery" class="container gallery">
-      <h2>Galerija</h2>
-      <div class="grid gallery-grid">
-        
-        <img src="slika2.jpg" alt="Slika2" width="300">
-        <img src="slika3.jpg" alt="Slika3" width="300">
-        <img src="slika11.jpg" alt="Slika11" width="300">
-        <img src="12.jpg" alt="12" width="300">
-         <img src="13.jpg" alt="13" width="300">
-        <img src="14.jpg" alt="14" width="300"> 
-        <img src="15.jpg" alt="15" width="300"> 
-        <img src="16.jpg" alt="16" width="300">
-        
-        
-        
-        
-        
-
-    
-
-        
-      </div>
-    </section>
-
-    <section id="contact" class="container contact">
-      <h2>Kontakt</h2>
-<form id="contact-form" action="https://formspree.io/f/xldqlojo" method="POST">
-    <input name="name" placeholder="Ime" required>
-    <input name="email" type="email" placeholder="Email" required>
-    <textarea name="message" placeholder="Sporočilo"></textarea>
-    <button type="submit">Pošlji</button>
-</form>
-
-<p id="status" style="color: green; font-weight: bold; display: none;">
-    Hvala za poslano povpraševanje.
-</p>
-
-
-
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Martina Luthar s.p. — Vse pravice pridržane.</p>
-    </div>
-  </footer>
-
-  <script src="script.js" defer></script>
-
-  <script>
-const form = document.getElementById("contact-form");
-const status = document.getElementById("status");
-
-form.addEventListener("submit", async function (e) {
-    e.preventDefault();
-
-    const data = new FormData(form);
-
-    // pošlji na Formspree
-    const response = await fetch(form.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
-    });
-
-    if (response.ok) {
-        status.style.display = "block"; // pokaže uspešno sporočilo
-        form.reset(); // počisti polja
-    } else {
-        status.style.display = "block";
-        status.innerText = "Prišlo je do napake. Prosim poskusite ponovno.";
-        status.style.color = "red";
-    }
-});
-</script>
 </body>
 </html>
+
 
 
 
